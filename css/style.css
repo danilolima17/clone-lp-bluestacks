@@ -354,4 +354,8 @@
     .section-three {
         margin-bottom: -180px;
     }
+
+    .news {
+        flex-direction: column;
+    }
 }
