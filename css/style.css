@@ -342,9 +342,16 @@
     }
 }
 
+
+
 @media (max-width: 736px) {
     
-    .news {
-        flex-direction: column;
+    .section-games {
+        height: 330vh;
+        margin-bottom: -200px;
+    }
+
+    .section-three {
+        margin-bottom: -180px;
     }
 }
