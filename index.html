@@ -12,18 +12,20 @@
 </head>
 <body onselectstart="return false">
     <div class="container">
-        <nav class="nav">
-            <div class="list">
-                <img src="img/download.png" alt="">
-                <a href="#">Recursos</a>
-                <a href="#">Jogos</a>
-                <a href="#">Blog</a>
-                <a href="#">Suporte</a>
-            </div>
-            <div class="language">
-                <a href="#">Português</a>
-            </div>
-        </nav>
+          <header id="header">
+            <a id="logo" href=""><img src="img/download.png" alt="" class="logo"></a>
+            <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+              </button>
+              <ul id="menu" role="menu">
+                <li><a href="/">Recursos</a></li>
+                <li><a href="/">Jogos</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/">Suporte</a></li>
+              </ul>
+            </nav>
+          </header>
         <section class="section">
             <button class="btn">
                 <img src="img/bluestacks-x-icon-filled.png" alt="" class="logo-b">
@@ -91,9 +93,6 @@
         </footer>
     </div>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
