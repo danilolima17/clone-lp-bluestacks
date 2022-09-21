@@ -188,7 +188,7 @@
 .section-three {
     background-color: #05123B;
     background-image: url("https://cdn-www.bluestacks.com/bs-images/feature-secondary-artefact.png");
-    height: 160vh;
+    height: 170vh;
 }
 
 .one, .two {
@@ -249,9 +249,15 @@
 }
 
 @media (max-width: 667px) {
-
+    .container {
+        background: linear-gradient(
+            rgba(0,0,0,.5),rgba(0,0,0,.5)
+          ),
+          url(../img/bg-mobile.png) no-repeat;
+    }
     .section {
         margin-top: -100px;
+        flex-direction: column;
     }
 
     .nav {
@@ -263,17 +269,13 @@
        display: none;
     }
 
-    .section {
-        flex-direction: column;
-    }
-
     .btn-2 {
         margin-top: 0;
 
     }
 
     .section-games {
-        height: 360vh;
+        height: 148rem;
     }
 
     .title {
@@ -295,7 +297,7 @@
     }
 
     .section-three {
-        height: 200vh;
+        height: 82rem;
     }
 
     .one, .two {
@@ -324,7 +326,7 @@
     }
 
     .section-four {
-        height: 130vh;
+        height: 55rem;
     }
 
     .videos {
@@ -342,20 +344,3 @@
     }
 }
 
-
-
-@media (max-width: 736px) {
-    
-    .section-games {
-        height: 340vh;
-        margin-bottom: -200px;
-    }
-
-    .section-three {
-        margin-bottom: -180px;
-    }
-
-    .news {
-        flex-direction: column;
-    }
-}
