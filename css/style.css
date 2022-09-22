@@ -4,6 +4,9 @@
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -193,7 +196,6 @@
 .cards img:hover {
     cursor: pointer;
     transform: scale(1.2);
-    box-shadow: initial;
     border: 8px solid;
     border-image: linear-gradient(45deg,#85D074,#70eb8f) 10;
     transition: 0.3s ease-out;
@@ -373,7 +375,7 @@
     }
 
     .section-games {
-        height: 148rem;
+        height: 60rem;
     }
 
     .title {
@@ -386,7 +388,22 @@
     }
 
     .cards {
-        flex-wrap: wrap;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 25px;
+        column-gap: 20px;
+        width: 350px;
+    }
+
+    .cards img {
+        flex: 0 0 60%;
+        padding: 30px;
+        scroll-snap-align: start;
+    }
+
+    .cards img:hover {
+        transform: none;
+        padding: 1px;
     }
 
     .btn-ex {
