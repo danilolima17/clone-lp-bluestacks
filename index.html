@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/bluestacks.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/splide.min.css">
     <title>Bluestacks - Melhor plataforma de jogos móveis para PC e Mac | 100% gratuito</title>
 </head>
 <body onselectstart="return false">
@@ -36,7 +37,7 @@
                 <p><span class="download">Baixe</span><br> BlueStacks10</p>
             </button>
         </section>
-        <section class="section-games">
+        <section class="section-games splide">
             <h2 class="title">2M+ Jogos Android. Vamos jogar.</h2>
             <div class="news">
                 <p>Principais Jogos</p>
@@ -44,12 +45,14 @@
                 <p>Melhores de Estrategia</p>
                 <p>Melhores de Ação</p>
             </div>
-            <div class="cards">
-                <img src="img/gametiles_com.chucklefish.stardewvalley.jpg" alt="">
-                <img src="img/gametiles_com.dsfgland.goat_16.jpg" alt="">
-                <img src="img/gametiles_com.smallgiantgames.empires7.jpg" alt="">
-                <img src="img/com.lilithgames.xgame_.gp_.jpg" alt="">
-                <img src="img/Tile_com.lockwoodpublishing.avakinlife2.jpg" alt="">
+            <div class="cards splide__track">
+                <ul class="splide__list">
+                    <li><img src="img/gametiles_com.chucklefish.stardewvalley.jpg" alt="" class="splide__slide"></li>
+                    <li><img src="img/gametiles_com.dsfgland.goat_16.jpg" alt="" class="splide__slide"></li>
+                    <li><img src="img/gametiles_com.smallgiantgames.empires7.jpg" alt="" class="splide__slide"></li>
+                    <li><img src="img/com.lilithgames.xgame_.gp_.jpg" alt="" class="splide__slide"></li>
+                    <li><img src="img/Tile_com.lockwoodpublishing.avakinlife2.jpg" alt="" class="splide__slide"></li>
+                </ul>
             </div>
             <button class="btn-ex">Explore todos os jogos</button>
         </section>
@@ -94,5 +97,15 @@
     </div>
     
     <script src="script/script.js"></script>
+    <script src="script/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+            type    : 'loop',
+            perPage : 3,
+            autoplay: true,
+} );
+
+    splide.mount();
+    </script>
 </body>
 </html>

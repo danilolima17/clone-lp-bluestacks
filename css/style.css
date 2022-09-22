@@ -146,10 +146,10 @@
     justify-content: center;
 }
 
-.section-games {
+.section-games{
     background: url("https://cdn-www.bluestacks.com/bs-images/feature-secondary-artefact.png");
     background-color: #0b1947;
-    height: 110vh;
+    height: 50rem;
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -184,13 +184,19 @@
 .cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
+    max-width: 690px;
+    margin: auto;
 }
 
+.cards li {
+    list-style-type: none;
+}
 .cards img {
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 .cards img:hover {
@@ -375,7 +381,8 @@
     }
 
     .section-games {
-        height: 60rem;
+        height: 80rem;
+        
     }
 
     .title {
@@ -388,18 +395,10 @@
     }
 
     .cards {
-        display: flex;
-        scroll-snap-type: x mandatory;
-        scroll-padding: 25px;
-        column-gap: 20px;
-        width: 350px;
+        flex-wrap: wrap;
     }
 
-    .cards img {
-        flex: 0 0 60%;
-        padding: 30px;
-        scroll-snap-align: start;
-    }
+ 
 
     .cards img:hover {
         transform: none;
@@ -418,6 +417,7 @@
     .one, .two {
         flex-wrap: wrap;
         text-align: center;
+        
     }
 
     .two {
