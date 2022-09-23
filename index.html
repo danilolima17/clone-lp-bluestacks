@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/bluestacks.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Bluestacks - Melhor plataforma de jogos móveis para PC e Mac | 100% gratuito</title>
 </head>
 <body onselectstart="return false">
@@ -20,10 +20,10 @@
                 <span id="hamburger"></span>
               </button>
               <ul id="menu" role="menu">
-                <li><a href="/">Recursos</a></li>
-                <li><a href="/">Jogos</a></li>
-                <li><a href="/">Blog</a></li>
-                <li><a href="/">Suporte</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#cards">Jogos</a></li>
+                <li><a href="#videos">Blog</a></li>
+                <li><a href="">Suporte</a></li>
               </ul>
             </nav>
           </header>
@@ -37,7 +37,7 @@
                 <p><span class="download">Baixe</span><br> BlueStacks10</p>
             </button>
         </section>
-        <section class="section-games splide">
+        <section class="section-games" id="cards">
             <h2 class="title">2M+ Jogos Android. Vamos jogar.</h2>
             <div class="news">
                 <p>Principais Jogos</p>
@@ -45,18 +45,15 @@
                 <p>Melhores de Estrategia</p>
                 <p>Melhores de Ação</p>
             </div>
-            <div class="cards splide__track">
-                <ul class="splide__list">
-                    <li><img src="img/gametiles_com.chucklefish.stardewvalley.jpg" alt="" class="splide__slide"></li>
-                    <li><img src="img/gametiles_com.dsfgland.goat_16.jpg" alt="" class="splide__slide"></li>
-                    <li><img src="img/gametiles_com.smallgiantgames.empires7.jpg" alt="" class="splide__slide"></li>
-                    <li><img src="img/com.lilithgames.xgame_.gp_.jpg" alt="" class="splide__slide"></li>
-                    <li><img src="img/Tile_com.lockwoodpublishing.avakinlife2.jpg" alt="" class="splide__slide"></li>
-                </ul>
-            </div>
+                <div class="cards your-class">
+                        <img src="img/gametiles_com.chucklefish.stardewvalley.jpg" alt="">
+                        <img src="img/gametiles_com.dsfgland.goat_16.jpg" alt="">
+                        <img src="img/gametiles_com.smallgiantgames.empires7.jpg" alt="">
+                        <img src="img/com.lilithgames.xgame_.gp_.jpg" alt="">
+                </div>
             <button class="btn-ex">Explore todos os jogos</button>
         </section>
-        <section class="section-three">
+        <section class="section-three" id="resources">
             <div class="one">
                 <div class="left-1"">
                     <img src="img/feature-1211.png" alt="" class="playing">
@@ -76,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-four">
+        <section class="section-four" id="videos">
             <h2 class="title">Principais vídeos do nosso canal</h2>
             <div class="videos">
                 <div class="v-left">
@@ -97,15 +94,7 @@
     </div>
     
     <script src="script/script.js"></script>
-    <script src="script/splide.min.js"></script>
-    <script>
-        var splide = new Splide( '.splide', {
-            type    : 'loop',
-            perPage : 3,
-            autoplay: true,
-} );
-
-    splide.mount();
-    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 </body>
 </html>
