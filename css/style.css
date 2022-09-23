@@ -13,7 +13,7 @@
     background: linear-gradient(
       rgba(0,0,0,.3),rgba(0,0,0,.3)
     ),
-    url(../img/1659344575118-website-\(4\).jpg) no-repeat;
+    url(../img/bg-desktop.jpg) no-repeat;
     height: 108vh;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
@@ -45,8 +45,6 @@
     display: flex;
     align-items: center;
 }
-
-
 
 #header {
     box-sizing: border-box;
@@ -93,8 +91,6 @@
     display: none;
   }
 
-
-
 .language a{
     text-decoration: none;
     color: rgb(207, 207, 207);
@@ -115,6 +111,14 @@
     font-weight: 600;
     align-items: center;
     margin-top: 180px;
+    cursor: pointer;
+    text-shadow: 1px 1px #575757;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #3ce9e9, #339484);
+    transition: 0.9s ease-in-out;
+    
 }
 
 .btn-2 {
@@ -128,11 +132,18 @@
     font-weight: 600;
     align-items: center;
     margin-top: 180px;;
+    cursor: pointer;
+    text-shadow: 1px 1px #575757;
+}
+
+.btn-2:hover {
+    background: linear-gradient(180deg, #a0ff8b, #22ebc9);
+    transition: 0.9s ease-in-out;
 }
 
 .logo-b {
     width: 50px;
-    box-shadow: #fff;
+    filter: drop-shadow(#000);
 }
 
 .btn p {
@@ -147,7 +158,7 @@
 .section {
     display: flex;
     gap: 15px;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     max-width: 800px;
     justify-content: center;
@@ -293,7 +304,7 @@
         background: linear-gradient(
             rgba(0,0,0,.3),rgba(0,0,0,.2)
           ),
-          url(../img/bg-mobile.png) no-repeat;
+          url(../img/bg-mobile-1.png) no-repeat;
     }
     .section {
         margin-top: -100px;
