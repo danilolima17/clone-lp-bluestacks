@@ -307,7 +307,6 @@
           url(../img/bg-mobile-1.png) no-repeat;
     }
     .section {
-        margin-top: -100px;
         flex-direction: column;
     }
 
