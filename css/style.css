@@ -118,7 +118,6 @@
 .btn:hover {
     background: linear-gradient(180deg, #3ce9e9, #339484);
     transition: 0.9s ease-in-out;
-    
 }
 
 .btn-2 {
@@ -305,7 +304,7 @@
             rgba(0,0,0,.3),rgba(0,0,0,.2)
           ),
           url(../img/bg-mobile-1.png) no-repeat;
-          height: 100%;
+          background-size: 736px;
     }
     .section {
         flex-direction: column;
